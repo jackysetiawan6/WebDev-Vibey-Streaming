@@ -5,6 +5,7 @@
 :root {
   --color-01: #000000;
   --color-02: #ffffff;
+  --color-03: #afafaf;
   --font-size: 1rem;
   --transition: all 0.3s ease-in-out;
 }
@@ -32,18 +33,75 @@
 .header-left,
 .header-mid,
 .header-mid > a,
-.header-right {
+.header-right,
+.scroll-panel,
+.panel,
+.player,
+.player-left,
+.player-info,
+.player-mid,
+.player-mid-control,
+.player-mid-track,
+.player-right,
+.footer,
+.footer-main,
+.footer-nav,
+.footer-end {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.hide {
+  display: none;
+}
+progress {
+  appearance: none;
+  width: 100%;
+  height: 6px;
+}
+progress::-webkit-progress-bar {
+  background-color: var(--color-03);
+  border-radius: 3px;
+}
+progress::-webkit-progress-value {
+  background-color: var(--color-01);
+  border-radius: 3px;
+}
 
 /* ========================================================== Bootstrap */
 
+.bi {
+  fill: var(--color-03);
+}
+.bi:hover {
+  fill: var(--color-01);
+}
 .bi-list {
-  scale: 2;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
-  display: none;
+}
+.bi-heart,
+.bi-shuffle,
+.bi-repeat,
+.bi-arrows-angle-expand {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.bi-play-circle,
+.bi-pause-circle {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.bi-skip-forward,
+.bi-skip-backward,
+.bi-volume-up,
+.bi-volume-mute {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
 }
 
 /* ============================================================= Header */
@@ -70,7 +128,6 @@
   height: 50px;
   width: 50px;
   object-fit: cover;
-  cursor: pointer;
   filter: invert(1);
 }
 .header-mid {
@@ -88,6 +145,158 @@
   background-color: var(--color-01);
 }
 
+/* ============================================================= Player */
+
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: var(--color-02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.player-left,
+.player-right {
+  height: 100%;
+  width: 30%;
+  max-width: 250px;
+}
+.player-left > img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  filter: invert(1);
+  margin-right: 10px;
+}
+.player-info {
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-right: 20px;
+}
+.player-title {
+  font-weight: bold;
+}
+.player-mid {
+  height: 100%;
+  width: 40%;
+  max-width: 700px;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.player-mid-control {
+  height: fit-content;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.player-mid-track {
+  height: 20px;
+  width: 100%;
+  gap: 10px;
+}
+.player-right {
+  gap: 10px;
+}
+.player-right > progress {
+  max-width: 130px;
+}
+
+/* ============================================================== Panel */
+
+.scroll {
+  position: relative;
+  margin-top: 50px;
+}
+.scroll > p {
+  font-size: calc(1.5 * var(--font-size));
+  font-weight: bold;
+}
+.scroll > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.scroll-panel {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  justify-content: left;
+  gap: 20px;
+  overflow-x: scroll;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.7));
+}
+.panel {
+  height: fit-content;
+  width: 180px;
+  min-width: 180px;
+  aspect-ratio: 3/4;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 15px;
+  padding: 15px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: var(--color-03);
+}
+.panel > img {
+  height: fit-content;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    var(--color-01),
+    var(--color-03),
+    var(--color-01)
+  );
+}
+.panel > p:nth-child(2) {
+  font-weight: bold;
+}
+
+/* ============================================================= Footer */
+
+.footer {
+  height: fit-content;
+  width: 100%;
+  padding: 100px 100px 150px 100px;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.footer > p:first-child {
+  font-size: calc(1.5 * var(--font-size));
+  font-weight: bold;
+}
+.footer > p:nth-child(2) {
+  text-align: justify;
+}
+.footer-main {
+  height: fit-content;
+  width: 100%;
+}
+.footer-nav {
+  height: fit-content;
+  width: 50%;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.footer-nav > a {
+  font-weight: bold;
+}
+.footer-end {
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 15px;
+}
+
 /* ========================================================= Responsive */
 
 @media screen and (max-width: 768px) {
@@ -96,7 +305,7 @@
   }
   .header-right {
     justify-content: right;
-    padding-right: 30px;
+    padding-right: 20px;
   }
   .header-right > a {
     display: none;
