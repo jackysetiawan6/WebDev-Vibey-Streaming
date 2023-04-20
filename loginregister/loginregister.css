@@ -141,6 +141,9 @@ input {
   transition: var(--transition);
   gap: 20px;
 }
+.overlay-panel > * {
+  color: var(--color-02);
+}
 .overlay-left {
   transform: translateX(-20%);
 }
