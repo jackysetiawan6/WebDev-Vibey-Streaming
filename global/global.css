@@ -36,6 +36,8 @@
 .header-right,
 .scroll-panel,
 .panel,
+.panel-long,
+.panel-long-desc,
 .player,
 .player-left,
 .player-info,
@@ -66,6 +68,28 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-color: var(--color-01);
   border-radius: 3px;
+}
+input {
+  appearance: none;
+  height: 100%;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--color-03);
+  background-color: transparent;
+  padding: 5px;
+}
+input::placeholder {
+  color: var(--color-03);
+}
+input:hover,
+input:focus {
+  color: var(--color-01);
+  border-bottom: 2px solid var(--color-01);
+}
+input:hover::placeholder,
+input:focus::placeholder {
+  color: var(--color-01);
 }
 
 /* ========================================================== Bootstrap */
@@ -254,8 +278,40 @@ progress::-webkit-progress-value {
     var(--color-01)
   );
 }
-.panel > p:nth-child(2) {
+.panel > p:nth-child(2),
+.panel-long-desc > p:nth-child(1) {
   font-weight: bold;
+}
+.panel-long {
+  height: fit-content;
+  width: 400px;
+  min-width: 400px;
+  aspect-ratio: 4/1;
+  justify-content: left;
+  align-items: center;
+  margin-top: 15px;
+  padding: 15px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: var(--color-03);
+}
+.panel-long > img {
+  height: 100%;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    var(--color-01),
+    var(--color-03),
+    var(--color-01)
+  );
+}
+.panel-long-desc {
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
 }
 
 /* ============================================================= Footer */
