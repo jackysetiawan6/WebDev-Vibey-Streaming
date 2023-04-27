@@ -372,4 +372,7 @@ input:focus::placeholder {
   .bi-list {
     display: block;
   }
+  .footer {
+    padding: 50px;
+  }
 }
