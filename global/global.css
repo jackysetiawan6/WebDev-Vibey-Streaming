@@ -3,9 +3,9 @@
   src: url("Roboto-Regular.ttf") format("truetype");
 }
 :root {
-  --color-01: #000000;
-  --color-02: #ffffff;
-  --color-03: #afafaf;
+  --color-01: #FFF;
+  --color-02: #530C56;
+  --color-03: #632B2B20;
   --font-size: 1rem;
   --transition: all 0.3s ease-in-out;
 }
@@ -56,6 +56,11 @@
 .hide {
   display: none;
 }
+body{
+  background: url('../assets/Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 progress {
   appearance: none;
   width: 100%;
@@ -75,27 +80,27 @@ input {
   width: 250px;
   border: none;
   outline: none;
-  border-bottom: 2px solid var(--color-03);
+  border-bottom: 2px solid var(--color-01);
   background-color: transparent;
   padding: 5px;
 }
 input::placeholder {
-  color: var(--color-03);
+  color: var(--color-01);
 }
 input:hover,
 input:focus {
-  color: var(--color-01);
-  border-bottom: 2px solid var(--color-01);
+  color: var(--color-02);
+  border-bottom: 2px solid var(--color-02);
 }
 input:hover::placeholder,
 input:focus::placeholder {
-  color: var(--color-01);
+  color: var(--color-02);
 }
 
 /* ========================================================== Bootstrap */
 
 .bi {
-  fill: var(--color-03);
+  fill: var(--color-01);
 }
 .bi:hover {
   fill: var(--color-01);
@@ -152,7 +157,7 @@ input:focus::placeholder {
   height: 50px;
   width: 50px;
   object-fit: cover;
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 .header-mid {
   height: 100%;

@@ -15,3 +15,51 @@
   text-align: right;
 }
 
+.play-button {
+  position: absolute;
+  margin-left: 105px;
+  margin-top: 90px;
+  /* top: 50%;
+  left: 50%; */
+  width: 50px;
+  height: 50px;
+  background:url('assets/playbutton.png');
+  background-size: cover;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
+.panel:hover .play-button {
+  opacity: 1;
+}
+
+.play-button.clicked {
+  background-image: url('assets/playbutton-pressed.png');
+}
+
+.long-play-button {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 1px;
+  /* top: 50%;
+  left: 50%; */
+  width: 50px;
+  height: 50px;
+  background:url('assets/longpb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
+.panel-long:hover .long-play-button {
+  opacity: 1;
+}
+
+.long-play-button.clicked {
+  background-image: url('assets/longpb-pressed.png');
+}
