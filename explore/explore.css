@@ -1,36 +1,53 @@
-/* ============================================================= Header */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 100vw;
-    justify-content: center;
-    background-color: var(--color-02);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    z-index: 999;
-  }
- 
-
+.main {
+  padding: 0 100px;
+  margin-top: 150px;
+}
 .main-header {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header > p {
+  font-size: calc(2 * var(--font-size));
+  font-weight: bold;
+  text-align: right;
+}
 
-  .main-header {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .main-header > p {
-    font-size: calc(2 * var(--font-size));
-    font-weight: bold;
-    text-align: right;
-  }
-  
+/* =============== GENRE */
+
+.scroll-genre {
+  flex-direction: column;
+}
+.genres {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.genre {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 50px;
+  width: 100%;
+  margin-top: 15px;
+  background-color: red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.genre:hover {
+  filter: brightness(0.8);
+}
+.genre > p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  padding-left: 15px;
+  background-color: var(--color-03);
+  font-weight: bold;
+  text-transform: uppercase;
+}

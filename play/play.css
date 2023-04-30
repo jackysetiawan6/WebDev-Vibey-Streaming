@@ -1,0 +1,39 @@
+.main {
+  position: relative;
+  display: flex;
+  margin-top: 80px;
+  height: calc(100vh - 150px);
+  width: 100vw;
+}
+.main-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-image: url("../songs/Moonflower.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  padding: 50px;
+  overflow-y: scroll;
+}
+.main-right > .lyrics > p {
+  font-size: calc(2 * var(--font-size));
+  animation: scroll 100s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
