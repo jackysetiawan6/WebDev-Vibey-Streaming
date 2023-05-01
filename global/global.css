@@ -146,19 +146,18 @@ input:focus::placeholder {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
-.header-left,
+.header-left > a> img{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
 .header-right {
   height: 100%;
   width: 20%;
   max-width: 200px;
   gap: 10px;
 }
-.header-left > img {
-  height: 50px;
-  width: 50px;
-  object-fit: cover;
-  /* filter: invert(1); */
-}
+
 .header-mid {
   height: 100%;
   width: 60%;
