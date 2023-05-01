@@ -6,3 +6,13 @@ genre.forEach(panel => {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
   panel.style.backgroundColor = randomColor;
 });
+
+const playButton = document.querySelector('.play-button');
+playButton.addEventListener('click', () => {
+  playButton.classList.toggle('clicked');
+});
+
+const pop = document.querySelector('.genre');
+pop.addEventListener('click', () => {
+	window.location.href = 'popsong.html';
+});
