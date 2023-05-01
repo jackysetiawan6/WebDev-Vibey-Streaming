@@ -36,7 +36,7 @@
     padding-top: 30px;
     display: block;
   }
-  .likes{
+  #likes{
     display: flex;
     align-items: center;
     width: fit-content;
@@ -64,6 +64,8 @@
     margin-left: 200px;
     margin-top: 81px;
     display:block;
+    overflow-y: scroll;
+    overflow-x: hidden;
     /* position: relative; */
     /* background-color: aqua; */
   }
@@ -109,14 +111,200 @@
     height: 200px;
     display: flex;
     gap:20px;
-  }
- 
-  
+  } 
 
   .newplaylist{
     height: 240px;
     width: auto;
   }
+
+  /* ============================================================= Your Likes */ --> 
+ .title_box{
+    display: flex;
+    background-image: url("../library/likes_rectangle.png");
+    width: 100%;
+    height: 430px;
+ }
+
+ .image{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 80px;
+    margin-top: 40px;
+    /* background-color: aquamarine; */
+ }
+
+ .image_img{
+    height: 350px;
+    width: 350px;
+ }
+
+ .text_box{
+    height: 350px;
+    width: 950px;
+    margin-top: 40px;
+    padding-top: 100px;
+    padding-left: 40px;
+    /* background-color: orchid; */
+ }
+
+ .text1{
+    font-size: 17px;
+ }
+
+ .text2{
+    font-size: 100px;
+    font-weight: bolder;
+  }
+
+.text3{
+  font-weight: 300;
+}
+
+.text4{
+  padding-top: 60px;
+  font-weight: 300;
+}
+
+.playdownload{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 80px;
+  gap: 20px;
+  /* background-color: lightpink; */
+}
+
+.download{
+  width: 40px;
+  height: 40px;
+}
+
+.sub_title{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 80px;
+  /* margin-right: ; */
+  height: 50px;
+  width: 85%;
+  /* background-color: mediumturquoise; */
+}
+
+.sub_title > p{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.title_txt{
+  margin-left: 50px;
+}
+
+.artist_txt{
+  margin-left: 450px;
+}
+
+.album_txt{
+  margin-left: 350px;
+}
+
+.time_icon{
+  margin-left: 400px;
+  width: 30px;
+  height: auto;
+}
+
+.line{
+  margin-left: 80px;
+  margin-right: 20px;
+  height: 1px;
+  width: 85%;
+  background-color: var(--color-02);
+}
+
+.song_panel{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* justify-tracks: center; */
+  margin-top: 10px;
+  margin-left: 80px;
+  /* margin-right: ; */
+  height: 50px;
+  width: 85%;
+  /* background-color: magenta; */
+}
+
+.song_panel>p{
+  font-size: 20px;
+}
+
+.cover_img{
+  border-radius: 5px;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  
+  margin-left: 50px;
+  /* background-color: antiquewhite; */
+}
+.cover_img img{
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+}
+.cover_img p{
+  font-size: 20px;
+}
+.fence{
+  /* background-color: aquamarine; */
+  height: 100%;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist{
+  height: 100%;
+  width: 250px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artist p{
+  font-size: 20px;
+}
+.album{
+  height: 100%;
+  width: 650px;
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.album p{
+  font-size: 20px;
+  margin-right: 100px;
+}
+.time{
+  height: 100%;
+  width: 90px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.time p{
+  font-size: 20px;
+}
+
+
 
 
   
