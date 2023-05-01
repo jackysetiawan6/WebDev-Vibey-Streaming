@@ -14,7 +14,26 @@
   font-weight: bold;
   text-align: right;
 }
-
+.artist-overlay{
+  position: absolute;
+  margin-top: 2px;
+  width: 150px;
+  height: 150px;
+  background:url('assets/artist.png');
+  background-size:contain;
+  opacity: 0;
+  /* border: black 1px solid; */
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 100%;
+  box-shadow: 0 0 5px 5px #48abe0;
+}
+.artist-panel:hover .artist-overlay {
+  opacity: 1;
+}
+.artist-overlay.clicked {
+  background-image: url('assets/artist-added.png');
+}
 .play-button {
   position: absolute;
   margin-left: 105px;
@@ -62,4 +81,33 @@
 
 .long-play-button.clicked {
   background-image: url('assets/longpb-pressed.png');
+}
+
+.artist-panel{
+  height: fit-content;
+  width: 180px;
+  min-width: 180px;
+  aspect-ratio: 3/4;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  margin-top: 15px;
+  padding: 15px;
+  gap: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.artist-panel > img {
+  height: fit-content;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+  background: linear-gradient(
+    45deg,
+    var(--color-01),
+    var(--color-03),
+    var(--color-01)
+  );
 }
