@@ -27,10 +27,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: aqua;
   }
+
   .main-header > p {
     font-size: calc(2 * var(--font-size));
     font-weight: bold;
     text-align: right;
   }
+
+
   

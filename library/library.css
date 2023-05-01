@@ -1,0 +1,68 @@
+/* ============================================================= Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100vw;
+    justify-content: center;
+    background-color: var(--color-02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+
+  .container{
+    position:relative;
+
+  }
+
+  .main {
+    /* padding: 0 100px; */
+    margin-top: 81px;
+    position: relative;
+    /* color: aqua; */
+  }
+
+  .left-box{
+    /* position: fix; */
+    height: 800px;
+    width: 300px;
+    background-color: var(--color-02);
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .left-box > a{
+    height: 50px;
+    width: 20px;
+    padding-top: 30px;
+    display: block;
+  }
+
+  /* .left-box > a:active{
+    color: var(--color-02); 
+    background-color: var(--color-01);
+  } */
+
+  .title{
+    margin-left: 305px;
+    
+    padding-top: 60px;
+    height: 20px;
+    width: 500px;
+    background-color: magenta;
+  }
+
+  .title > p{
+    font-size: large;
+  }
+
+  
+
+
+
+  
+
+
+  
