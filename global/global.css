@@ -89,12 +89,12 @@ input::placeholder {
 }
 input:hover,
 input:focus {
-  color: var(--color-02);
-  border-bottom: 2px solid var(--color-02);
+  color: var(--color-01);
+  border-bottom: 2px solid var(--color-01);
 }
 input:hover::placeholder,
 input:focus::placeholder {
-  color: var(--color-02);
+  color: var(--color-01);
 }
 
 /* ========================================================== Bootstrap */
@@ -256,6 +256,34 @@ input:focus::placeholder {
   gap: 20px;
   overflow-x: scroll;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.7));
+}
+.artist-panel{
+  height: fit-content;
+  width: 180px;
+  min-width: 180px;
+  aspect-ratio: 3/4;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  margin-top: 15px;
+  padding: 15px;
+  gap: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.artist-panel > img {
+  height: fit-content;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+  background: linear-gradient(
+    45deg,
+    var(--color-01),
+    var(--color-03),
+    var(--color-01)
+  );
 }
 .panel {
   height: fit-content;

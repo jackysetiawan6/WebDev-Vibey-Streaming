@@ -93,6 +93,7 @@
 
   .section{
     opacity: 60%;
+    cursor: pointer;
   }
   .section.active{
     opacity: 100%;
@@ -109,9 +110,9 @@
     height: 200px;
     display: flex;
     gap:20px;
+    
   }
- 
-  
+
 
   .newplaylist{
     height: 240px;
