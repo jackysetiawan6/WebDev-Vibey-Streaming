@@ -6,6 +6,7 @@
     <title>Vibey Music Streaming</title>
     <link rel="icon" href="../assets/Logo.png" type="Icon" />
     <link rel="stylesheet" href="../global/global.css" />
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../library/library.css" />
 </head>
 <body>
@@ -29,20 +30,143 @@
           </svg>
         </div>
       </header>
-  <!-- /* ============================================================= Playlist */ -->   
+     
       <div class="container">
-        <div class="main">
-          <div class="left-box">
-            <a class="active" href="library-playlists.html">Playlists</a>
-            <a href="#">Albums</a>
-            <a href="#">Artists</a>
+        <div class="left-box">
+          <p class="section active" onclick="clickContent(0)">Playlists</a>
+          <p class ="section inactive" onclick="clickContent(1)">Albums</a>
+          <p class="section inactive" onclick="clickContent(2)">Artists</a>
+          <div class="likes">
+            <img src="../library/likes.png" alt="yourlikes-icon" class="your-likes">
+            <p class="likes-text">Your Likes</p>
+
           </div>
 
+          
+        </div>
+<!-- /* ============================================================= Playlist */ -->
+        <div class="main active">
           <div class="title">
             <p>Playlists</p>
           </div>
 
+          <div class="content" id ="playlist">
+            <img src="../assets/newplaylist.png" class="newplaylist" style="margin-top:17px;" >
+
+            <div class="panel">
+              <img src="../library/playlist1.png" alt="Cover 001" style="margin-top: 0;"/>
+                <div class="play-button">
+                </div>
+                <p>My Playlist #1</p>
+                <p>by User</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/playlist2.png" alt="Cover 002" />
+                <div class="play-button">
+                </div>
+                <p>My Playlist #2</p>
+                <p>by User</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/playlist3.png" alt="Cover 003" />
+                <div class="play-button">
+                </div>
+                <p>My Playlist #3</p>
+                <p>by User</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/playlist4.png" alt="Cover 004" />
+                <div class="play-button">
+                </div>
+                <p>My Playlist #4</p>
+                <p>by User</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/playlist5.png" alt="Cover 005" />
+                <div class="play-button">
+                </div>
+                <p>My Playlist #5</p>
+                <p>by User</p>
+            </div>
+          </div>
         </div>
+
+  <!-- /* ============================================================= Albums */ -->   
+        <div class="main inactive">
+          <div class="title">
+            <p>Albums</p>
+          </div>
+
+          <div class="content" id ="playlist">
+            <img src="../assets/more-album.png" class="newplaylist" style="margin-top:17px;" >
+
+            <div class="panel">
+              <img src="../library/album1.jpg" alt="Cover 001" style="margin-top: 0;"/>
+                <div class="play-button">
+                </div>
+                <p>Amen</p>
+                <p>Rich Brian</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/album2.jpg" alt="Cover 002" />
+                <div class="play-button">
+                </div>
+                <p>Nicole</p>
+                <p>NIKI</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/album3.jpg" alt="Cover 003" />
+                <div class="play-button">
+                </div>
+                <p>The ReVe Fest</p>
+                <p>Red Velvet</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/album4.jpg" alt="Cover 004" />
+                <div class="play-button">
+                </div>
+                <p>Manusia</p>
+                <p>Tulus</p>
+            </div>
+          </div>
+        </div>
+
+<!-- /* ============================================================= Artists */ -->   
+
+        <div class="main inactive">
+          <div class="title">
+            <p>Artists</p>
+          </div>
+
+          <div class="content" id ="playlist">
+            <img src="../assets/more-artist.png" class="newplaylist" style="margin-top:17px;" >
+
+            <div class="panel">
+              <img src="../library/album1.jpg" alt="Cover 001" style="margin-top: 0;"/>
+                <div class="play-button">
+                </div>
+                <p>Amen</p>
+                <p>Rich Brian</p>
+            </div>
+  
+            <div class="panel">
+              <img src="../library/album2.jpg" alt="Cover 002" />
+                <div class="play-button">
+                </div>
+                <p>Nicole</p>
+                <p>NIKI</p>
+            </div>
+
+        </div>
+        
+      
 
 
       </div>
@@ -143,6 +267,7 @@
         </div>
       </div>
       <script src="explore.js"></script>
+      <script src="library.js"></script>
     
 </body>
 </html>
