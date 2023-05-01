@@ -1,6 +1,8 @@
-const playButton = document.querySelector('.play-button');
-playButton.addEventListener('click', () => {
-  playButton.classList.toggle('clicked');
+const playButton = document.querySelectorAll('.play-button');
+playButton.forEach(element => {
+  element.addEventListener('click', () => {
+    element.classList.toggle('clicked');
+  });
 });
 const Playbtn=document.querySelector('.bi-play-circle');
 const Pausebtn=document.querySelector('.bi-pause-circle');
