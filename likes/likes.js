@@ -8,3 +8,14 @@ Pausebtn.addEventListener('click', () => {
   Pausebtn.style.display = "none";
   Playbtn.style.display = "block";
 });
+const profile = document.querySelector('.profile');
+const profileOverlay = document.querySelector('.profile-list');
+profile.addEventListener('click', () => {
+  profileOverlay.style.opacity = "1";
+  profile.style.opacity = "0";
+});
+const closebtn = document.querySelector('.closebtn');
+closebtn.addEventListener('click', () => {
+  profileOverlay.style.opacity = "0";
+  profile.style.opacity = "1";
+});

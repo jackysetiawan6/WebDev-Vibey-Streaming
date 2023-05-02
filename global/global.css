@@ -172,6 +172,72 @@ input:focus::placeholder {
   color: var(--color-02);
   background-color: var(--color-01);
 }
+.profile{
+  width: 50px;
+  height: 50px;
+  border: var(--color-01) 2px solid;
+  border-radius: 100%;
+  background: url('../home/cover36.jpg');
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.up-profile{
+  margin-left: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.closebtn{
+  margin-left: 25px;
+  /* border: red 2px solid; */
+  width: 50px;
+  height: 50px;
+  background:url('../assets/close.png');
+  background-size: cover;
+  cursor: pointer;
+}
+.imgprof{
+  width:50px;
+  height: 50px;
+  background: url(../home/cover36.jpg);
+  background-size: cover;
+  border-radius: 100%;
+  border: 2px solid var(--color-01);
+  margin-right: 10px;
+}
+
+.profile-list{
+  position: absolute;
+  background: var(--color-02);
+  width: 250px;
+  height: 250px;
+  right: 0px;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.selection-profile{
+  margin-top: 25px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.selection-profile > a{
+  margin-left: 10px;
+  cursor: pointer;
+  /* padding: 8px; */
+}
+.selection-profile > img{
+  width: 30px;
+  height: 30px;
+}
+.selection-profile:hover{
+  color: darkgrey;
+}
 
 /* ============================================================= Player */
 
