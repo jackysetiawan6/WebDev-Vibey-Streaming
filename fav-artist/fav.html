@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vibey Music Streaming</title>
-    <link rel="icon" href="assets/Logo.png" type="Icon" />
+    <link rel="icon" href="../assets/Logo.png" type="Icon" />
     <link rel="stylesheet" href="../global/global.css" />
-    <link rel="stylesheet" href="../profile/profile.css" />
+    <link rel="stylesheet" href="fav.css" />
   </head>
   <body>
     <header class="header">
@@ -21,6 +21,14 @@
         <a href="../library/library-playlists.html">Library</a>
       </div>
       <div class="header-right">
+        <a href="loginregister/loginregister.html">Login</a>
+        <div class="profile-list">
+          <div class="up-profile"><div class="imgprof"></div>Joel Edward <div class="closebtn"></div></div>
+          <div class="selection-profile"><img src="../../assets/setting.png" alt="Setting"><a href="../../profile/profile.html">Setting</a></div>
+          <div class="selection-profile"><img src="../../assets/changeacc.png" alt="Setting"><a href="#" >Change Account</a></div>
+          <div class="selection-profile"><img src="../../assets/signout.png" alt="Setting"><a href="#">Sign Out</a></div>
+        </div>
+        <div class="profile"></div>
         <svg class="bi bi-list hide" viewBox="0 0 16 16">
           <path
             fill-rule="evenodd"
@@ -29,60 +37,148 @@
         </svg>
       </div>
     </header>
-      <div class="content">
-        <div class="content-list-1"></div>
-        <div class="content-list-2">
-          <p style="font-weight: bold;font-size: 40px;">Profile</p>
-          <div style="display: flex;flex-direction: row;margin-top: 10px;"><p style="color: #FFFFFF60;">Username</p> <p style="margin-left: 20px;">Joel Edward</p></div>
-          <div style="display: flex;flex-direction: row;margin-top: 10px;"><p style="color: #FFFFFF60;">Password</p> <p style="margin-left: 20px;">********</p></div>
-          <p style="text-decoration: underline;margin-top: 10px;cursor: pointer;font-size: 10px;"><i>Reset Your Password</i></p>
-          <button>Edit Profile</button>
+    <div class="container">
+      <div class="main">
+        <p class="title-up"">Select Your Favourite Artist</p>
+        <div class="scroll">
+          <div class="scroll-panel">
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover21.jpeg" alt="Artist 01" />
+              <p><br>Justin Bieber</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover12.jpeg" alt="Artist 02" />
+              <p><br>TWICE</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover35.jpeg" alt="Artist 03" />
+              <p><br>Rich Brian</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover14.jpeg" alt="Artist 04" />
+              <p><br>Post Malone</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover40.jpeg" alt="Artist 05" />
+              <p><br>88rising</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover16.jpeg" alt="Artist 06" />
+              <p><br>BLACKPINK</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover36.jpg" alt="Artist 07" />
+              <p><br>JUL</p>
+            </div>
         </div>
-        <div class="line"></div>
-        <div class="content-list">
-          <p style="font-weight: bold;font-size: 40px;text-align: center;">Top Artist</p>
-          <div class="bullet-list">
-            <div class="bullet">
-              <div style="background: url('../home/cover14.jpeg');background-size: cover;  background-repeat: no-repeat;" class="pic"></div>
-              <p style="text-align: center;">Post Malone</p>
+        <div class="scroll">
+          <div class="scroll-panel">
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover11.jpeg" alt="Artist 01" />
+              <p><br>BIBI</p>
             </div>
-            <div class="bullet">
-              <div style="background: url('../home/cover42.jpeg');background-size: cover;  background-repeat: no-repeat;" class="pic"></div>
-              <p style="text-align: center;">Red Velvet</p>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover4.jpeg" alt="Artist 02" />
+              <p><br>Joji</p>
             </div>
-            <div class="bullet">
-              <div style="background: url('../home/cover40.jpeg');background-size: cover;  background-repeat: no-repeat;" class="pic"></div>
-              <p style="text-align: center;">88rising</p>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover5.jpeg" alt="Artist 03" />
+              <p><br>NIKI</p>
             </div>
-          </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover23.jpeg" alt="Artist 04" />
+              <p><br>Tyler,The Creator</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover6.jpg" alt="Artist 05" />
+              <p><br>Chung Ha</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover26.jpeg" alt="Artist 06" />
+              <p><br>ROSE</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover38.jpeg" alt="Artist 07" />
+              <p><br>Miguel</p>
+            </div>
         </div>
-        <div class="line"></div>
-      <div class="content-list">
-          <p style="font-weight: bold;font-size: 40px;text-align: center;">Top Songs</p>
-          <div class="bullet-list">
-            <div class="bullet">
-              <div style="background: url('../home/cover41.jpeg');background-size: cover;  background-repeat: no-repeat;" class="pic"></div>
-              <p style="text-align: center;">Circles</p>
+        <div class="scroll">
+          <div class="scroll-panel">
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover25.png" alt="Artist 01" />
+              <p><br>Olivia Rodrigo</p>
             </div>
-            <div class="bullet">
-              <div style="background: url('../home/cover31.jpg');background-size: cover;  background-repeat: no-repeat;" class="pic"></div>
-              <p style="text-align: center;">Psycho</p>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover36.jpg" alt="Artist 02" />
+              <p><br>Jonas Brothers</p>
             </div>
-            <div class="bullet">
-              <div style="background: url('../home/cover43.jpeg');background-size: cover;  background-repeat: no-repeat;" class="pic"></div>
-              <p style="text-align: center;">Landslide</p>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover7.jpg" alt="Artist 03" />
+              <p><br>SZA</p>
             </div>
-          </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover44.jpeg" alt="Artist 04" />
+              <p><br>Aespa</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover45.jpeg" alt="Artist 05" />
+              <p><br>Taylor Swift</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover46.jpeg" alt="Artist 06" />
+              <p><br>New Jeans</p>
+            </div>
+            <div class="artist-panel">
+              <div class="artist-overlay">
+              </div>
+              <img src="../home/cover47.jpeg" alt="Artist 07" />
+              <p><br>Adele</p>
+            </div>
         </div>
-      </div>
-      <div class="artist-selection-rect">
-        <div class="left-pic"></div>
-        <div>
-          <p style="font-size: 20px;">Tell Vibey your favourite Artist</p>
-          <p style="color: #FFFFFF60;">We'll make sure to play it for you</p>
-          <button onclick="window.location.href='../fav-artist/fav.html'" class="fav-btn">LET'S GO</button>
+        <div style="display: flex;justify-content: center;">
+          <button onclick="window.location.href='../index.html'" class="done-button">DONE</button>
         </div>
-      </div>
+        
       <div class="player">
         <div class="player-left">
           <img src="../songs/Moonflower.jpeg" alt="Moonflower" />
@@ -212,6 +308,6 @@
         <p>© 2023 Vibey Music Streaming. All rights reserved.</p>
       </div>
     </footer>
-    <script src="profile.js"></script>
+    <script src="fav.js"></script>
   </body>
 </html>
