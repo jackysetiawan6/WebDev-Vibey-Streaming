@@ -1,0 +1,110 @@
+.main {
+  padding: 0 100px;
+  margin-top: 150px;
+}
+.main-header {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header > p {
+  font-size: calc(2 * var(--font-size));
+  font-weight: bold;
+  text-align: right;
+}
+.content{
+  align-items: center;
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-direction: row;
+}
+.content-list{
+  display: flex;
+  flex-direction: column;
+}
+.content-list-1{
+  margin-left: 100px;
+  width: 300px;
+  height: 250px;
+  border-radius: 100%;
+  background: url(../home/cover36.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content-list-2{
+  margin-left: 50px;
+  width: 250px;
+  height: 250px;
+  align-items: center;
+}
+
+.content-list-2 > button{
+  margin-top: 10px;
+  background-color: #FFFFFF80;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  color: black;
+}
+.content-list{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  /* border: red 2px solid; */
+  width: 500px;
+  height: 250px;
+}
+.bullet-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.bullet{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+.line{
+  height: 200px;
+  border: #FFFFFF solid 2px;
+}
+.artist-selection-rect{
+  margin: auto;
+  width: 80%;
+  height: 200px;
+  background:linear-gradient(#DB00FF,#00000060);
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  justify-content: space-around;
+  align-items: center;
+}
+.left-pic{
+  background: url('../assets/artist-combo.png');
+  width: 400px;
+  height: 180px;
+  background-size: cover;
+}
+.fav-btn{
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  color: black;
+}
