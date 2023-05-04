@@ -14,18 +14,19 @@
   font-weight: bold;
   text-align: right;
 }
-.artist-overlay{
+.artist-overlay {
   position: absolute;
-  margin-top: 2px;
   width: 150px;
-  height: 150px;
-  background:url('assets/artist.png');
-  background-size:contain;
+  aspect-ratio: 1/1;
+  background-image: url('assets/artist.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0;
   /* border: black 1px solid; */
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 100%;
+  border-radius: 50%;
   box-shadow: 0 0 5px 5px #48abe0;
 }
 .artist-panel:hover .artist-overlay {
