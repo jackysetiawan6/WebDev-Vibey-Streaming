@@ -14,7 +14,7 @@
   font-weight: bold;
   text-align: right;
 }
-.content{
+.content {
   align-items: center;
   margin-top: 100px;
   display: flex;
@@ -22,35 +22,35 @@
   height: 500px;
   flex-direction: row;
 }
-.content-list{
+.content-list {
   display: flex;
   flex-direction: column;
 }
-.content-list-1{
+.content-list-1 {
   margin-left: 100px;
   width: 300px;
-  height: 250px;
+  height: 300px;
   border-radius: 100%;
   background: url(../home/cover36.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.content-list-2{
+.content-list-2 {
   margin-left: 50px;
   width: 250px;
   height: 250px;
   align-items: center;
 }
 
-.content-list-2 > button{
+.content-list-2 > button {
   margin-top: 10px;
-  background-color: #FFFFFF80;
+  background-color: #ffffff80;
   width: 100px;
   height: 30px;
   border-radius: 20px;
   color: black;
 }
-.content-list{
+.content-list {
   margin-left: 50px;
   display: flex;
   flex-direction: column;
@@ -58,18 +58,18 @@
   width: 500px;
   height: 250px;
 }
-.bullet-list{
+.bullet-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 30px;
 }
-.bullet{
+.bullet {
   width: fit-content;
   display: flex;
   flex-direction: column;
 }
-.pic{
+.pic {
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -77,15 +77,15 @@
   background-repeat: no-repeat;
   align-self: center;
 }
-.line{
+.line {
   height: 200px;
-  border: #FFFFFF solid 2px;
+  border: #ffffff solid 2px;
 }
-.artist-selection-rect{
+.artist-selection-rect {
   margin: auto;
   width: 80%;
   height: 200px;
-  background:linear-gradient(#DB00FF,#00000060);
+  background: linear-gradient(#db00ff, #00000060);
   border-radius: 20px;
   margin-top: 20px;
   display: flex;
@@ -94,15 +94,15 @@
   justify-content: space-around;
   align-items: center;
 }
-.left-pic{
-  background: url('../assets/artist-combo.png');
+.left-pic {
+  background: url("../assets/artist-combo.png");
   width: 400px;
   height: 180px;
   background-size: cover;
 }
-.fav-btn{
+.fav-btn {
   margin-top: 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100px;
   height: 30px;
   border-radius: 20px;

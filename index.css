@@ -98,7 +98,7 @@
   align-items: center;
 }
 .left-pic{
-  background: url('../assets/artist-combo.png');
+  background: url('assets/artist-combo.png');
   width: 400px;
   height: 180px;
   background-size: cover;
